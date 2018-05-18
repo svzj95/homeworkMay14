@@ -1,6 +1,6 @@
-package utils;
+package aplana.utils;
 
-import steps.BaseSteps;
+import aplana.steps.BaseSteps;
 import gherkin.formatter.model.*;
 import io.qameta.allure.cucumberjvm.AllureCucumberJvm;
 

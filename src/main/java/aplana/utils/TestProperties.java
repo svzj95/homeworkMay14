@@ -1,4 +1,4 @@
-package utils;
+package aplana.utils;
 
 import java.io.File;
 import java.io.FileInputStream;

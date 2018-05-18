@@ -1,4 +1,4 @@
-package steps;
+package aplana.steps;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -8,7 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import utils.TestProperties;
+import aplana.utils.TestProperties;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,11 +40,13 @@ public class BaseSteps {
                 System.setProperty("webdriver.gecko.driver", properties.getProperty("webdriver.gecko.driver"));
                 driver = new FirefoxDriver();
                 break;
-            default:
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", properties.getProperty("webdriver.chrome.driver"));
                 driver = new ChromeDriver();
                 break;
+            default:
+                System.setProperty("webdriver.chrome.driver", properties.getProperty("webdriver.chrome.driver"));
+                driver = new ChromeDriver();
         }
 
         baseUrl = properties.getProperty("app.url");

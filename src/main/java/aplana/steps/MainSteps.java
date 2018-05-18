@@ -1,7 +1,7 @@
-package steps;
+package aplana.steps;
 
 import io.qameta.allure.Step;
-import pages.MainPage;
+import aplana.pages.MainPage;
 
 public class MainSteps {
     @Step("Выбор меню {0} элемента {1}")
